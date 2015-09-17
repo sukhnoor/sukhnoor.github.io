@@ -18,14 +18,25 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
                 type: "POST",
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    'key': 'XxnxTAHhFAb5NrVawjG4ww',
+                    'message': {
+                        'from_email': email,
+                        'from_name': name,
+                        'to': [{
+                                'email': 'info@sukhnoor.com',
+                                'name': 'infomail',
+                                'type': 'to'
+                        }],
+                        'autotext': 'true',
+                        'subject': 'CONTACT :: ' + name,
+                        'html': visitorComment
+                    }
                 },
+                timeout: 6000,
+                dataType: 'json',
                 cache: false,
                 success: function() {
                     // Success message
