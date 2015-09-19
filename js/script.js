@@ -17,13 +17,13 @@ $(document).ready(function ($) {
 });
 
 //Owl Carousel
-$(document).ready(function() {
+// $(document).ready(function() {
  
-  $("#owl-demo").owlCarousel({
+//   $("#owl-demo").owlCarousel({
  
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
+//       slideSpeed : 300,
+//       paginationSpeed : 400,
+//       singleItem:true
  
       // "singleItem:true" is a shortcut for:
       // items : 1, 
@@ -32,6 +32,6 @@ $(document).ready(function() {
       // itemsTablet: false,
       // itemsMobile : false
  
-  });
+//   });
  
-});
+// });
