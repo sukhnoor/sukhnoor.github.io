@@ -14,7 +14,7 @@ body {
 #bg_pattern { 
     background-image: url(../images/bg_pattern.jpg);
     position: fixed; 
-    opacity: 0.3; 
+    opacity: 0.4; 
     left: 0px; 
     top: 0px; 
     width: 100%; 
@@ -133,7 +133,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .logo span {
-    color: #FFF;
+    color: #A71313;
     font-size: 18px;
 }
 
