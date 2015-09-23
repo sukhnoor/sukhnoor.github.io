@@ -463,7 +463,7 @@ and (max-width : 1199px) {
 }
 
 
-.feature-2 ul i {
+i.fa-check-square-o {
     color:#FF432E;
     font-size:1em;
     padding:1px 10px 0 1px;
