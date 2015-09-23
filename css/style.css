@@ -179,15 +179,14 @@ fieldset[disabled] .btn-primary.active {
 
 .menu-item {
     color: #fff;
-    opacity: .9;
+    opacity: .7;
     padding-top: 45px;
     padding-bottom: 45px;
     margin-bottom: 30px;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
     border: 5px solid transparent;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;	
+    border-radius: 15px;
 }
 
 .menu-item:hover{
@@ -270,6 +269,7 @@ and (max-width : 1199px) {
 
 .home-slider{
     margin-top: 30px;
+    opacity: .6;
 }
 
 .home-slider img {
@@ -279,6 +279,11 @@ and (max-width : 1199px) {
 
 .home-slider .carousel-inner{
     height: 400px;
+    border-radius: 15px;
+    background: url(../images/c.jpg);
+    background-attachment: fixed;
+/*    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;*/
 }
 
 .home-slider .carousel-indicators {
@@ -292,6 +297,9 @@ and (max-width : 1199px) {
 
 
 .copyright {
+    /*position: absolute;
+    bottom: 5px;    
+    width: 100%;*/
     background: rgba( 0, 0, 0, 0.7);
     color: #fff;
     padding-top: 20px;
@@ -1073,4 +1081,22 @@ and (max-width : 991px) {
     background: #FF432E;
     padding: 20px;
     color: #fff;
+}
+
+
+.carousel-inner-title h3{
+    color: red;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: none;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.carousel-inner-title p {
+    padding-bottom: 60px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
 }
